@@ -15,8 +15,8 @@ function Login() {
     setError("");
     try {
       const response = await axios.post(
-        // "http://localhost:5000/api/auth/login"
-        "http://localhost:5000/api/auth/login",
+        // "https://movie-recommend-hh86.onrender.com/api/auth/login"
+        "https://movie-recommend-hh86.onrender.com/api/auth/login",
         { email, password }
       );
       localStorage.setItem("userId", response.data.userId);

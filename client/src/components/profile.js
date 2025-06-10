@@ -13,7 +13,7 @@ const Profile = () => {
       try {
         const userId = localStorage.getItem("userId");
         const response = await axios.get(
-          `http://localhost:5000/api/auth/users/${userId}`
+          `https://movie-recommend-hh86.onrender.com/api/auth/users/${userId}`
         );
         setUser(response.data);
       } catch (err) {

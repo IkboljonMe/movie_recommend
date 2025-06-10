@@ -20,8 +20,8 @@ function Signup() {
     try {
       console.log("Submitting signup form...");
       const response = await axios.post(
-        // "http://localhost:5000/api/auth/signup"
-        "http://localhost:5000/api/auth/signup",
+        // "https://movie-recommend-hh86.onrender.com/api/auth/signup"
+        "https://movie-recommend-hh86.onrender.com/api/auth/signup",
         {
           firstName,
           lastName,
